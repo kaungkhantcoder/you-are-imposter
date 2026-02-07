@@ -108,12 +108,12 @@ function ViewingPhase({
         ))}
       </div>
 
-      <p className="mb-2 text-sm font-bold text-muted-foreground">
+      <p className="mb-2 text-sm font-bold text-primary-foreground">
         {t("Player", "ကစားသူ")} {playerIndex + 1} / {totalPlayers}
       </p>
 
       <motion.div layout className="mb-4 text-center">
-        <h2 className="text-2xl font-black">{player.name}</h2>
+        <h2 className="text-2xl text-primary-foreground  font-black">{player.name}</h2>
         <p className="text-sm text-muted-foreground font-semibold">
           {t("Tap the card to see your role", "သင့်အခန်းကဏ္ဍကို ကြည့်ရန် ကတ်ကို နှိပ်ပါ")}
         </p>
@@ -125,7 +125,7 @@ function ViewingPhase({
         className={`relative w-full max-w-xs overflow-hidden rounded-3xl p-6 text-center shadow-card-game ${
           revealed
             ? player.isImposter
-              ? "bg-game-red text-primary-foreground"
+              ? "bg-primary  text-primary-foreground"
               : "bg-primary text-primary-foreground"
             : "bg-card cursor-pointer"
         }`}
@@ -257,7 +257,7 @@ function VotingPhase({
   return (
     <motion.div initial={{ x: 30, opacity: 0 }} animate={{ x: 0, opacity: 1 }} className="pt-4">
       <h2 className="mb-1 text-xl font-black">{voter.name}</h2>
-      <p className="mb-4 text-sm text-muted-foreground font-semibold">{t("Who is the imposter?", "ဘယ်သူက သူလျှို?")}</p>
+      <p className="mb-4 text-sm text-primary-foreground font-semibold">{t("Who is the imposter?", "ဘယ်သူက သူလျှို?")}</p>
 
       <div className="mb-4 space-y-2">
         {players
@@ -314,7 +314,7 @@ function ResultPhase({
   return (
     <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="flex flex-col items-center pt-8">
       <div className="mb-4 text-6xl">{imposterCaught ? "🎉" : "😈"}</div>
-      <h2 className="mb-2 text-2xl font-black">
+      <h2 className="mb-2 text-2xl text-primary-foreground font-black">
         {imposterCaught
           ? t("Imposter Caught!", "သူလျှို အဖမ်းခံရ!")
           : t("Imposter Wins!", "သူလျှို အနိုင်ရ!")}

@@ -29,7 +29,7 @@ const Index = () => {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2 }}
-        className="mb-1 text-center text-3xl font-black text-foreground tracking-tight"
+        className="mb-1 text-center text-3xl font-black text-primary-foreground tracking-tight"
       >
         {t("Who is the", "ဘယ်သူက")}
       </motion.h1>

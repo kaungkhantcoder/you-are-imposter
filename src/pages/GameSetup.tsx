@@ -78,7 +78,7 @@ export default function GameSetup() {
         <AnimatePresence mode="wait">
           {step === "players" && (
             <motion.div key="players" initial={{ x: 30, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -30, opacity: 0 }}>
-              <h2 className="mb-6 text-2xl font-black">{t("Players", "ကစားသူများ")}</h2>
+              <h2 className="mb-6 text-2xl text-primary-foreground  font-black">{t("Players", "ကစားသူများ")}</h2>
 
               {/* Player count */}
               <div className="mb-4 flex items-center justify-between rounded-2xl bg-card p-4 shadow-card-game">
@@ -138,7 +138,7 @@ export default function GameSetup() {
 
           {step === "categories" && (
             <motion.div key="categories" initial={{ x: 30, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -30, opacity: 0 }}>
-              <h2 className="mb-2 text-2xl font-black">{t("Categories", "အမျိုးအစားများ")}</h2>
+              <h2 className="mb-2 text-2xl text-primary-foreground font-black">{t("Categories", "အမျိုးအစားများ")}</h2>
               <p className="mb-4 text-sm text-muted-foreground font-semibold">
                 {t(`Choose at least ${MIN_CATEGORIES} categories`, `အနည်းဆုံး ${MIN_CATEGORIES} ခု ရွေးပါ`)}
               </p>
@@ -191,7 +191,7 @@ export default function GameSetup() {
           {step === "ready" && (
             <motion.div key="ready" initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="flex flex-col items-center pt-8">
               <div className="mb-6 text-6xl">🕵️‍♂️</div>
-              <h2 className="mb-2 text-2xl font-black">{t("Ready to Play!", "ကစားဖို့ အဆင်သင့်!")}</h2>
+              <h2 className="mb-2 text-2xl text-primary-foreground font-black">{t("Ready to Play!", "ကစားဖို့ အဆင်သင့်!")}</h2>
               <div className="mb-6 space-y-2 text-center text-muted-foreground font-semibold">
                 <p><Users className="mr-1 inline h-4 w-4" /> {playerCount} {t("players", "ကစားသူများ")} • {imposterCount} {t("imposter(s)", "သူလျှို")}</p>
                 <p><Shuffle className="mr-1 inline h-4 w-4" /> {selectedCategories.length} {t("categories", "အမျိုးအစားများ")}</p>
