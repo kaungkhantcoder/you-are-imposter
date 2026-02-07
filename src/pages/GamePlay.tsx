@@ -125,8 +125,8 @@ function ViewingPhase({
         className={`relative w-full max-w-xs overflow-hidden rounded-3xl p-6 text-center shadow-card-game ${
           revealed
             ? player.isImposter
-              ? "bg-primary  text-primary-foreground"
-              : "bg-primary text-primary-foreground"
+              ? "text-red-300"
+              : "text-green-300"
             : "bg-card cursor-pointer"
         }`}
         onClick={!revealed ? handleReveal : undefined}
@@ -197,7 +197,7 @@ function DiscussionPhase({ onStartVoting, t }: { onStartVoting: () => void; t: (
   return (
     <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="flex flex-col items-center pt-12">
       <div className="mb-4 text-6xl">💬</div>
-      <h2 className="mb-2 text-2xl font-black">{t("Discussion Time!", "ဆွေးနွေးချိန်!")}</h2>
+      <h2 className="mb-2 text-2xl text-primary-foreground  font-black">{t("Discussion Time!", "ဆွေးနွေးချိန်!")}</h2>
       <p className="mb-2 text-center text-muted-foreground font-semibold max-w-xs">
         {t(
           "Each player describes the word without saying it directly. The imposter must bluff!",
