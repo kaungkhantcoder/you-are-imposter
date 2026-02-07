@@ -32,11 +32,19 @@ function shuffleArray<T>(arr: T[]): T[] {
   return shuffled;
 }
 
-function getHintWord(word: WordPair, allWords: WordPair[]): { en: string; mm: string } {
-  // Get a related hint from the same category pool (different word)
-  const otherWords = allWords.filter((w) => w.en !== word.en);
-  if (otherWords.length === 0) return { en: "???", mm: "???" };
-  const hint = otherWords[Math.floor(Math.random() * otherWords.length)];
+// function getHintWord(word: WordPair, allWords: WordPair[]): { en: string; mm: string } {
+//   // Get a related hint from the same category pool (different word)
+//   const otherWords = allWords.filter((w) => w.en !== word.en);
+//   if (otherWords.length === 0) return { en: "???", mm: "???" };
+//   const hint = otherWords[Math.floor(Math.random() * otherWords.length)];
+//   return { en: hint.en, mm: hint.mm };
+// }
+
+function getHintWord(word: WordPair): { en: string; mm: string } {
+  if (!word.hints || word.hints.length === 0) {
+    return { en: "???", mm: "???" };
+  }
+  const hint = word.hints[Math.floor(Math.random() * word.hints.length)];
   return { en: hint.en, mm: hint.mm };
 }
 
@@ -48,7 +56,7 @@ export function createGameSession(
   const selectedCats = categories.filter((c) => selectedCategoryIds.includes(c.id));
   const allWords = selectedCats.flatMap((c) => c.words);
   const word = allWords[Math.floor(Math.random() * allWords.length)];
-  const hint = getHintWord(word, allWords);
+  const hint = getHintWord(word);
 
   const imposterIndices = new Set<number>();
   while (imposterIndices.size < imposterCount) {
