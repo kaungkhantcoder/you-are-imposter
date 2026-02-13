@@ -1135,7 +1135,7 @@ export const categories: Category[] = [
         hints: [
           { en: "Paint", mm: "ဆေးသုတ်/ရေးဆွဲခြင်း" },
           { en: "Color", mm: "အရောင်" },
-          { en: "Beautiful", mm: "လှပသော" },
+          { en: "Creative", mm: "ဖန်တီးမှု" },
           { en: "Paper", mm: "စက္ကူ" },
           { en: "Drawing", mm: "ပုံဆွဲခြင်း" },
         ],
@@ -1146,7 +1146,7 @@ export const categories: Category[] = [
         hints: [
           { en: "Fire", mm: "မီး" },
           { en: "Water", mm: "ရေ" },
-          { en: "Red truck", mm: "ကားအနီရောင်" },
+          { en: "Red", mm: "အနီရောင်" },
           { en: "Save", mm: "ကယ်တင်ခြင်း" },
           { en: "Strong", mm: "သန်မာသော" },
         ],
