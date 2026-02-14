@@ -635,11 +635,11 @@ export const categories: Category[] = [
         en: "Football",
         mm: "ဘောလုံး",
         hints: [
-          { en: "Kick", mm: "ကန်ခြင်း" },
-          { en: "Goal", mm: "ဂိုး" },
-          { en: "Grass", mm: "မြက်ခင်း" },
-          { en: "Team", mm: "အသင်း" },
-          { en: "Shoes", mm: "ဖိနပ်" },
+          { en: "Circle", mm: "အဝိုင်း" },
+          { en: "Net", mm: "ပိုက်ကွန်" },
+          { en: "Most Watch", mm: "လူကြည့်များ" },
+          { en: "Team", mm: "အဖွဲ့" },
+          { en: "Journal", mm: "ဂျာနယ်" },
         ],
       },
       {
@@ -843,7 +843,7 @@ export const categories: Category[] = [
         hints: [
           { en: "Portable", mm: "သယ်ဆောင်ရလွယ်သော" },
           { en: "Keyboard", mm: "ကီးဘုတ်" },
-          { en: "Screen", mm: "မျက်နှာပြင်" },
+          { en: "Square", mm: "လေးထောင့်" },
           { en: "Battery", mm: "ဘက်ထရီ" },
           { en: "Foldable", mm: "ခေါက်နိုင်သော" },
         ],
@@ -852,10 +852,10 @@ export const categories: Category[] = [
         en: "Tablet",
         mm: "တက်ဘလက်",
         hints: [
-          { en: "Screen", mm: "မျက်နှာပြင်" },
+          { en: "Square", mm: "လေးထောင့်" },
           { en: "Touch", mm: "ထိတွေ့မှု" },
           { en: "Portable", mm: "သယ်ဆောင်ရလွယ်သော" },
-          { en: "No keyboard", mm: "ကီးဘုတ်မပါ" },
+          { en: "Keyboard", mm: "ကီးဘုတ်" },
           { en: "Draw/Watch", mm: "ဆွဲခြင်း သို့မဟုတ် ကြည့်ခြင်း" },
         ],
       },
@@ -928,8 +928,8 @@ export const categories: Category[] = [
         hints: [
           { en: "Strings", mm: "ကြိုးများ" },
           { en: "Shoulder", mm: "ပုခုံး" },
-          { en: "Stick", mm: "တံ" },
-          { en: "Sad or Sweet", mm: "အလွမ်း သို့မဟုတ် အချို" },
+          { en: "Stick", mm: "အတံ" },
+          { en: "Sad Mood", mm: "အဆွေး" },
           { en: "Wood", mm: "သစ်သား" },
         ],
       },
@@ -1234,7 +1234,7 @@ export const categories: Category[] = [
         hints: [
           { en: "Camera", mm: "ကင်မရာ" },
           { en: "Picture", mm: "ပုံ" },
-          { en: "Flash", mm: "မီးရောင်" },
+          { en: "Lighting", mm: "အလင်းအမှောင်" },
           { en: "Memory", mm: "အမှတ်တရ" },
           { en: "Beauty", mm: "အလှအပ" },
         ],
