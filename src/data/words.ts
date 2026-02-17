@@ -799,7 +799,7 @@ export const categories: Category[] = [
         hints: [
           { en: "Global", mm: "တစ်ကမ္ဘာလုံးဆိုင်ရာ" },
           { en: "Connection", mm: "ချိတ်ဆက်မှု" },
-          { en: "Data", mm: "ဒေတာ" },
+          { en: "Wire", mm: "ကြိုး" },
           { en: "Invisible", mm: "မမြင်ရသော" },
           { en: "Search", mm: "ရှာဖွေခြင်း" },
         ],
@@ -821,7 +821,7 @@ export const categories: Category[] = [
         hints: [
           { en: "Fly", mm: "ပျံသန်းခြင်း" },
           { en: "Camera", mm: "ကင်မရာ" },
-          { en: "Remote control", mm: "အဝေးထိန်း" },
+          { en: "Control", mm: "ထိန်းချုပ်ခြင်း" },
           { en: "Sky", mm: "ကောင်းကင်" },
           { en: "Propellers", mm: "ပန်ကာများ" },
         ],
@@ -834,7 +834,7 @@ export const categories: Category[] = [
           { en: "Internet", mm: "အင်တာနက်" },
           { en: "Password", mm: "လျှို့ဝှက်နံပါတ်" },
           { en: "Signal", mm: "လှိုင်း" },
-          { en: "Home/Office", mm: "အိမ် သို့မဟုတ် ရုံး" },
+          { en: "Home", mm: "အိမ်" },
         ],
       },
       {
