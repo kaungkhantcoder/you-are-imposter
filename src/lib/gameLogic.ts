@@ -84,10 +84,7 @@ export function createGameSession(
 }
 
 export function getMaxImposters(playerCount: number): number {
-  if (playerCount <= 4) return 1;
-  if (playerCount <= 8) return 2;
-  if (playerCount <= 12) return 3;
-  return 4;
+  return Math.max(1, playerCount - 1);
 }
 
 export function generateRoomCode(): string {
