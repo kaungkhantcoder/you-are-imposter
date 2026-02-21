@@ -539,8 +539,8 @@ export const categories: Category[] = [
         en: "Guitar",
         mm: "ဂစ်တာ",
         hints: [
-          { en: "Music", mm: "ဂီတ" },
-          { en: "Strings", mm: "ကြိုးများ" },
+          { en: "Singer", mm: "အဆိုတော်" },
+          { en: "String", mm: "ကြိုး" },
           { en: "Wood", mm: "သစ်သား" },
           { en: "Play", mm: "တီးခတ်ခြင်း" },
           { en: "Sound", mm: "အသံ" },
@@ -550,11 +550,11 @@ export const categories: Category[] = [
         en: "Bicycle",
         mm: "စက်ဘီး",
         hints: [
-          { en: "Wheels", mm: "ဘီးများ" },
-          { en: "Ride", mm: "စီးနင်းခြင်း" },
+          { en: "Mountain", mm: "တောင်" },
+          { en: "Circle", mm: "အဝိုင်း" },
           { en: "Exercise", mm: "လေ့ကျင့်ခန်း" },
-          { en: "Two-wheels", mm: "ဘီးနှစ်ဘီး" },
-          { en: "Pedal", mm: "ခြေနင်း" },
+          { en: "Wheel", mm: "ဘီး" },
+          { en: "leg", mm: "ခြေထောက်" },
         ],
       },
       {
