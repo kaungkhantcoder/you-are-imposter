@@ -476,7 +476,7 @@ export const categories: Category[] = [
           { en: "Work", mm: "အလုပ်" },
           { en: "Keyboard", mm: "ကီးဘုတ်" },
           { en: "Desk", mm: "စားပွဲ" },
-          { en: "Software", mm: "ဆော့ဖ်ဝဲလ်" },
+          { en: "Glasses", mm: "မျက်မှန်" },
           { en: "Glass", mm: "ဖန်သား" },
         ],
       },
