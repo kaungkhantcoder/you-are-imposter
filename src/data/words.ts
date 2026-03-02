@@ -412,7 +412,7 @@ export const categories: Category[] = [
         hints: [
           { en: "Run", mm: "ပြေးခြင်း" },
           { en: "Fast", mm: "မြန်သော" },
-          { en: "Ride", mm: "စီးနင်းခြင်း" },
+          { en: "Hair", mm: "အမွှေး" },
           { en: "Strong", mm: "သန်မာသော" },
           { en: "Farm", mm: "ခြံ" },
         ],
@@ -421,8 +421,8 @@ export const categories: Category[] = [
         en: "Rabbit",
         mm: "ယုန်",
         hints: [
-          { en: "Long ears", mm: "နားရွက်ရှည်" },
-          { en: "Carrot", mm: "မုန်လာဥနီ" },
+          { en: "Ears", mm: "နားရွက်" },
+          { en: "Teeth", mm: "သွား" },
           { en: "Jump", mm: "ခုန်ခြင်း" },
           { en: "Soft", mm: "နူးညံ့သော" },
           { en: "White", mm: "အဖြူရောင်" },
