@@ -402,7 +402,7 @@ export const categories: Category[] = [
           { en: "Four Legs", mm: "ခြေလေးချောင်း" },
           { en: "Loyal", mm: "သစ္စာရှိသော" },
           { en: "Bite", mm: "ကိုက်ခြင်း" },
-          { en: "Friend", mm: "သူငယ်ချင်း" },
+          { en: "Friendly", mm: "ရင်းနှီးမှူ" },
           { en: "Guard", mm: "စောင့်ရှောက်သူ" },
         ],
       },
@@ -464,9 +464,9 @@ export const categories: Category[] = [
         hints: [
           { en: "Communication", mm: "ဆက်သွယ်ရေး" },
           { en: "Pocket", mm: "အိတ်ကပ်" },
-          { en: "Screen", mm: "မျက်နှာပြင်" },
-          { en: "Call", mm: "ဖုန်းခေါ်ခြင်း" },
-          { en: "Internet", mm: "အင်တာနက်" },
+          { en: "Button", mm: "ခလုပ်" },
+          { en: "Speak", mm: "စကားပြော" },
+          { en: "Battery", mm: "ဘတ်ထရီ" },
         ],
       },
       {
@@ -474,7 +474,7 @@ export const categories: Category[] = [
         mm: "ကွန်ပျူတာ",
         hints: [
           { en: "Work", mm: "အလုပ်" },
-          { en: "Keyboard", mm: "ကီးဘုတ်" },
+          { en: "Cam", mm: "ကင်မရာ" },
           { en: "Desk", mm: "စားပွဲ" },
           { en: "Glasses", mm: "မျက်မှန်" },
           { en: "Glass", mm: "ဖန်သား" },
@@ -484,11 +484,11 @@ export const categories: Category[] = [
         en: "Book",
         mm: "စာအုပ်",
         hints: [
-          { en: "Read", mm: "ဖတ်ခြင်း" },
+          { en: "Cover", mm: "အဖုံး" },
           { en: "Paper", mm: "စက္ကူ" },
-          { en: "Knowledge", mm: "ဗဟုသုတ" },
-          { en: "Library", mm: "စာကြည့်တိုက်" },
-          { en: "Page", mm: "စာမျက်နှာ" },
+          { en: "White", mm: "အဖြူ" },
+          { en: "Group", mm: "အစုအဖွဲ့" },
+          { en: "Lines", mm: "မျဉ်းကြောင်း" },
         ],
       },
       {
