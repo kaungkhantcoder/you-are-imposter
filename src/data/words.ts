@@ -808,9 +808,9 @@ export const categories: Category[] = [
         en: "Satellite",
         mm: "ဂြိုလ်တု",
         hints: [
-          { en: "Space", mm: "အာကာသ" },
+          { en: "Space", mm: "ဟင်းလင်းပြင်" },
           { en: "Earth", mm: "ကမ္ဘာမြေ" },
-          { en: "Signal", mm: "လှိုင်း/အချက်ပြ" },
+          { en: "Signal", mm: "အချက်ပြ" },
           { en: "High", mm: "မြင့်မားသော" },
           { en: "Communication", mm: "ဆက်သွယ်ရေး" },
         ],
@@ -823,7 +823,7 @@ export const categories: Category[] = [
           { en: "Camera", mm: "ကင်မရာ" },
           { en: "Control", mm: "ထိန်းချုပ်ခြင်း" },
           { en: "Sky", mm: "ကောင်းကင်" },
-          { en: "Propellers", mm: "ပန်ကာများ" },
+          { en: "Propeller", mm: "ပန်ကာ" },
         ],
       },
       {
@@ -831,7 +831,7 @@ export const categories: Category[] = [
         mm: "ဝိုင်ဖိုင်",
         hints: [
           { en: "Wireless", mm: "ကြိုးမဲ့" },
-          { en: "Internet", mm: "အင်တာနက်" },
+          { en: "Office", mm: "ရုံး" },
           { en: "Password", mm: "လျှို့ဝှက်နံပါတ်" },
           { en: "Signal", mm: "လှိုင်း" },
           { en: "Home", mm: "အိမ်" },
@@ -889,7 +889,7 @@ export const categories: Category[] = [
           { en: "Private", mm: "သီးသန့်" },
           { en: "Sound", mm: "အသံ" },
           { en: "Listen", mm: "နားထောင်ခြင်း" },
-          { en: "Wire/Wireless", mm: "ကြိုးပါ သို့မဟုတ် ကြိုးမဲ့" },
+          { en: "Wire", mm: "ကြိုး" },
         ],
       },
       {
@@ -915,7 +915,7 @@ export const categories: Category[] = [
         en: "Piano",
         mm: "စန္ဒယား",
         hints: [
-          { en: "Black and White", mm: "အမည်းနှင့် အဖြူ" },
+          { en: "White", mm: "အဖြူ" },
           { en: "Keys", mm: "ခလုတ်များ" },
           { en: "Big", mm: "ကြီးမားသော" },
           { en: "Elegant", mm: "ခန့်ညားသော" },
