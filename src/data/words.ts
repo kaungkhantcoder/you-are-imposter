@@ -1067,11 +1067,11 @@ export const categories: Category[] = [
         en: "Engineer",
         mm: "အင်ဂျင်နီယာ",
         hints: [
-          { en: "Build", mm: "တည်ဆောက်ခြင်း" },
+          { en: "Brick", mm: "အုတ်ခဲ" },
           { en: "Math", mm: "သင်္ချာ" },
-          { en: "Plan", mm: "အစီအစဉ်/ပုံစံထုတ်ခြင်း" },
+          { en: "Plan", mm: "အစီအစဉ်" },
           { en: "Machine", mm: "စက်ပစ္စည်း" },
-          { en: "Hard hat", mm: "ဦးထုပ်မာ" },
+          { en: "Hat", mm: "ဦးထုပ်" },
         ],
       },
       {
@@ -1081,8 +1081,8 @@ export const categories: Category[] = [
           { en: "Sky", mm: "ကောင်းကင်" },
           { en: "Fly", mm: "ပျံသန်းခြင်း" },
           { en: "Travel", mm: "ခရီးသွားခြင်း" },
-          { en: "Plane", mm: "လေယာဉ်" },
-          { en: "Airport", mm: "လေဆိပ်" },
+          { en: "Black Coat", mm: "အမဲရောင်ကုတ်အကျီ" },
+          { en: "Night Light", mm: "ညမီး" },
         ],
       },
       {
