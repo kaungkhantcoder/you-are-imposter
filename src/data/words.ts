@@ -563,7 +563,7 @@ export const categories: Category[] = [
         hints: [
           { en: "Light", mm: "အလင်းရောင်" },
           { en: "Night", mm: "ည" },
-          { en: "Electricity", mm: "လျှပ်စစ်" },
+          { en: "House", mm: "အိမ်" },
           { en: "Bright", mm: "လင်းထိန်သော" },
           { en: "Table", mm: "စားပွဲ" },
         ],
@@ -616,7 +616,7 @@ export const categories: Category[] = [
         en: "Crown",
         mm: "သရဖူ",
         hints: [
-          { en: "King/Queen", mm: "ဘုရင်/မိဖုရား" },
+          { en: "King", mm: "ဘုရင်" },
           { en: "Gold", mm: "ရွှေ" },
           { en: "Head", mm: "ခေါင်း" },
           { en: "Expensive", mm: "စျေးကြီးသော" },
@@ -658,7 +658,7 @@ export const categories: Category[] = [
         mm: "တင်းနစ်",
         hints: [
           { en: "Racket", mm: "ရက်ကတ်" },
-          { en: "Yellow ball", mm: "အဝါရောင်ဘောလုံး" },
+          { en: "Yellow", mm: "အဝါရောင်" },
           { en: "Net", mm: "ပိုက်" },
           { en: "Court", mm: "ကွင်း" },
           { en: "Hit", mm: "ရိုက်ခြင်း" },
