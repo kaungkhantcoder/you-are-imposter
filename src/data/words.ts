@@ -1523,10 +1523,10 @@ export const categories: Category[] = [
         en: "Pomegranate",
         mm: "သလဲသီး",
         hints: [
-          { en: "Red seeds", mm: "အစေ့အနီများ" },
+          { en: "Seed", mm: "အစေ့" },
           { en: "Juice", mm: "ဖျော်ရည်" },
           { en: "Healthy", mm: "ကျန်းမာရေးနှင့်ညီညွတ်သော" },
-          { en: "Many seeds", mm: "အစေ့များပြားသော" },
+          { en: "Transparent", mm: "အကြည်" },
           { en: "Round", mm: "အဝိုင်းပုံ" },
         ],
       },

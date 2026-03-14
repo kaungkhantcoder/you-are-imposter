@@ -1,5 +1,5 @@
 This app is finding who is imposter in the mactch. I created for family, inspired from other
-imposter game. However, in my game, that can use with Burmese Language.
+imposter game. However, in my game, that can use with Burmese Language. Fun Game.
 
 Follow these steps:
 
