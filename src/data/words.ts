@@ -1487,28 +1487,6 @@ export const categories: Category[] = [
         ],
       },
       {
-        en: "Guava",
-        mm: "မာလကာသီး",
-        hints: [
-          { en: "Green", mm: "အစိမ်းရောင်" },
-          { en: "Hard", mm: "မာသော" },
-          { en: "White or Pink", mm: "အတွင်းသားအဖြူ သို့ ပန်းရောင်" },
-          { en: "Seeds", mm: "အစေ့များ" },
-          { en: "Crunchy", mm: "အကြွပ်" },
-        ],
-      },
-      {
-        en: "Lychee",
-        mm: "လိုင်ချီးသီး",
-        hints: [
-          { en: "Red shell", mm: "အခွံအနီ" },
-          { en: "White inside", mm: "အတွင်းသားအဖြူ" },
-          { en: "Sweet", mm: "အချို" },
-          { en: "Juicy", mm: "အရည်ရွှမ်းသော" },
-          { en: "One big seed", mm: "အစေ့ကြီးတစ်စေ့" },
-        ],
-      },
-      {
         en: "Jackfruit",
         mm: "ပိန္နဲသီး",
         hints: [
