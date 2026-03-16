@@ -1262,22 +1262,22 @@ export const categories: Category[] = [
   // },
 
   // Famous Person
-  // {
-  //   id: "famous",
-  //   name: "Famous Person",
-  //   nameMm: "နာမည်ကြီးသူ",
-  //   icon: "⭐",
-  //   words: [
-  //     { en: "Elon Musk", mm: "အီလွန် မတ်စ်" },
-  //     { en: "Albert Einstein", mm: "အဲလ်ဘတ် အိုင်းစတိုင်း" },
-  //     { en: "Cristiano Ronaldo", mm: "ခရစ်စတီယာနို ရိုနာလ်ဒို" },
-  //     { en: "Taylor Swift", mm: "တေလာ ဆွစ်ဖ်" },
-  //     { en: "Steve Jobs", mm: "စတီးဗ် ဂျော့ဘ်စ်" },
-  //     { en: "Mark Zuckerberg", mm: "ဇူကာဘတ်" },
-  //     { en: "Michael Jackson", mm: "မိုက်ကယ် ဂျက်ဆင်" },
-  //     { en: "Lionel Messi", mm: "လိုင်ယနယ် မက်ဆီ" },
-  //   ],
-  // },
+  {
+    id: "famous",
+    name: "Famous Person",
+    nameMm: "နာမည်ကြီးသူ",
+    icon: "⭐",
+    words: [
+      { en: "Elon Musk", mm: "အီလွန် မတ်စ်" },
+      { en: "Albert Einstein", mm: "အဲလ်ဘတ် အိုင်းစတိုင်း" },
+      { en: "Cristiano Ronaldo", mm: "ခရစ်စတီယာနို ရိုနာလ်ဒို" },
+      { en: "Taylor Swift", mm: "တေလာ ဆွစ်ဖ်" },
+      { en: "Steve Jobs", mm: "စတီးဗ် ဂျော့ဘ်စ်" },
+      { en: "Mark Zuckerberg", mm: "ဇူကာဘတ်" },
+      { en: "Michael Jackson", mm: "မိုက်ကယ် ဂျက်ဆင်" },
+      { en: "Lionel Messi", mm: "လိုင်ယနယ် မက်ဆီ" },
+    ],
+  },
 
   {
     id: "season",
