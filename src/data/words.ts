@@ -1318,14 +1318,14 @@ export const categories: Category[] = [
           { en: "Sweet", mm: "အချို" },
           { en: "Crunchy", mm: "အကြွပ်" },
           { en: "Label", mm: "တံဆိပ်" },
-          { en: "Healthy", mm: "ကျန်းမာရေးနှင့်ညီညွတ်သော" },
+          { en: "Healthy", mm: "ကျန်းမာရေးကောင်းသော" },
         ],
       },
       {
         en: "Watermelon",
         mm: "ဖရဲသီး",
         hints: [
-          { en: "Green", mm: "အစိမ်း" },
+          { en: "Seed", mm: "အစိ" },
           { en: "Red", mm: "အနီ" },
           { en: "Liquid", mm: "အရည်" },
           { en: "Big", mm: "ကြီးမားသော" },
@@ -1349,7 +1349,7 @@ export const categories: Category[] = [
         hints: [
           { en: "Yellow", mm: "အဝါရောင်" },
           { en: "Spik", mm: "အဆူး" },
-          { en: "Sweet and Sour", mm: "ချိုချဉ်" },
+          { en: "Sour", mm: "အချဉ်" },
           { en: "Crown", mm: "အမောက်" },
           { en: "Juicy", mm: "အရည်ရွှမ်းသော" },
         ],
