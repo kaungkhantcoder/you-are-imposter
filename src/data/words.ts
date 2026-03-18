@@ -1362,7 +1362,7 @@ export const categories: Category[] = [
           { en: "Sweet", mm: "အချို" },
           { en: "Summer", mm: "နွေရာသီ" },
           { en: "King", mm: "ဘုရင်" },
-          { en: "Myanmar", mm: "မြန်မာနိုင်ငံ" },
+          { en: "Green", mm: "အစိမ်း" },
         ],
       },
       {
@@ -1384,7 +1384,7 @@ export const categories: Category[] = [
           { en: "Long", mm: "အရှည်" },
           { en: "Soft", mm: "ပျော့ပျောင်းသော" },
           { en: "Curved", mm: "အကွေး" },
-          { en: "Peel", mm: "အခွံခွာ" },
+          { en: "Vitamin", mm: "ဗီတာမင်" },
         ],
       },
       {
@@ -1394,7 +1394,7 @@ export const categories: Category[] = [
           { en: "Red", mm: "အနီရောင်" },
           { en: "Small", mm: "သေးငယ်သော" },
           { en: "Sour", mm: "အချဉ်" },
-          { en: "Heart shape", mm: "နှလုံးသားပုံစံ" },
+          { en: "Salad", mm: "အသုပ်" },
           { en: "Cold place", mm: "အေးသောဒေသ" },
         ],
       },
@@ -1402,8 +1402,8 @@ export const categories: Category[] = [
         en: "Grape",
         mm: "စပျစ်သီး",
         hints: [
-          { en: "Purple or Green", mm: "အညို သို့မဟုတ် အစိမ်း" },
-          { en: "Small circles", mm: "အလုံးလေးများ" },
+          { en: "Dark Purple", mm: "ခရမ်းအရင့်" },
+          { en: "Circle", mm: "အလုံး" },
           { en: "Bunch", mm: "အခိုင်လိုက်" },
           { en: "Sweet", mm: "အချို" },
           { en: "Wine", mm: "ဝိုင်" },
