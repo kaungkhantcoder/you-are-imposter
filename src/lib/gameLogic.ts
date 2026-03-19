@@ -40,12 +40,64 @@ function shuffleArray<T>(arr: T[]): T[] {
 //   return { en: hint.en, mm: hint.mm };
 // }
 
-function getHintWord(word: WordPair): { en: string; mm: string } {
-  if (!word.hints || word.hints.length === 0) {
-    return { en: "???", mm: "???" };
-  }
-  const hint = word.hints[Math.floor(Math.random() * word.hints.length)];
-  return { en: hint.en, mm: hint.mm };
+// function getHintWord(word: WordPair): { en: string; mm: string } {
+//   if (!word.hints || word.hints.length === 0) {
+//     return { en: "Think Yourself", mm:"ကိုယ့်ဘာသာ စဉ်းစား" };
+//   }
+//   const hint = word.hints[Math.floor(Math.random() * word.hints.length)];
+//   return { en: hint.en, mm: hint.mm };
+// }
+
+// export function createGameSession(
+//   playerNames: string[],
+//   imposterCount: number,
+//   selectedCategoryIds: string[]
+// ): GameSession {
+//   const selectedCats = categories.filter((c) => selectedCategoryIds.includes(c.id));
+//   const allWords = selectedCats.flatMap((c) => c.words);
+//   const word = allWords[Math.floor(Math.random() * allWords.length)];
+//   const hint = getHintWord(word);
+
+//   const imposterIndices = new Set<number>();
+//   while (imposterIndices.size < imposterCount) {
+//     imposterIndices.add(Math.floor(Math.random() * playerNames.length));
+//   }
+
+//   const players: Player[] = playerNames.map((name, i) => ({
+//     id: i,
+//     name,
+//     isImposter: imposterIndices.has(i),
+//     hasViewed: false,
+//   }));
+
+//   return {
+//     sessionId: generateSessionId(),
+//     players: shuffleArray(players),
+//     word,
+//     imposterHint: hint.en,
+//     imposterHintMm: hint.mm,
+//     currentPlayerIndex: 0,
+//     phase: "viewing",
+//     selectedCategories: selectedCategoryIds,
+//     votes: {},
+//   };
+// }
+
+function createHintGenerator(word: WordPair) {
+  let shuffled = [...word.hints].sort(() => Math.random() - 0.5);
+  let index = 0;
+
+  return function nextHint() {
+    if (shuffled.length === 0) {
+      return { en: "Think Yourself", mm: "ကိုယ့်ဘာသာ စဉ်းစား" };
+    }
+    if (index >= shuffled.length) {
+      shuffled = [...word.hints].sort(() => Math.random() - 0.5);
+      index = 0;
+    }
+    const hint = shuffled[index++];
+    return { en: hint.en, mm: hint.mm };
+  };
 }
 
 export function createGameSession(
@@ -56,7 +108,10 @@ export function createGameSession(
   const selectedCats = categories.filter((c) => selectedCategoryIds.includes(c.id));
   const allWords = selectedCats.flatMap((c) => c.words);
   const word = allWords[Math.floor(Math.random() * allWords.length)];
-  const hint = getHintWord(word);
+
+  // Create a hint generator for this word
+  const hintGenerator = createHintGenerator(word);
+  const hint = hintGenerator();
 
   const imposterIndices = new Set<number>();
   while (imposterIndices.size < imposterCount) {
@@ -80,6 +135,8 @@ export function createGameSession(
     phase: "viewing",
     selectedCategories: selectedCategoryIds,
     votes: {},
+    // You can store the generator if you want to call it later:
+    // hintGenerator
   };
 }
 

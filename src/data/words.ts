@@ -106,6 +106,8 @@ export interface WordPair {
 // ];
 
 export const categories: Category[] = [
+
+  // Foods
   {
     id: "food",
     name: "Food",
@@ -279,6 +281,8 @@ export const categories: Category[] = [
       },
     ],
   },
+
+  // Animals
   {
     id: "animals",
     name: "Animals",
@@ -302,7 +306,7 @@ export const categories: Category[] = [
         hints: [
           { en: "Big", mm: "ကြီးမားသော" },
           { en: "Grey", mm: "မီးခိုးရောင်" },
-          { en: "Trunk", mm: "နှာမောင်း" },
+          { en: "Nose", mm: "နှာခေါင်း" },
           { en: "Strong", mm: "သန်မာသော" },
           { en: "Forest", mm: "တောအုပ်" },
         ],
@@ -452,6 +456,8 @@ export const categories: Category[] = [
       },
     ],
   },
+
+  // Things
   {
     id: "things",
     name: "Things",
@@ -625,6 +631,8 @@ export const categories: Category[] = [
       },
     ],
   },
+
+  // Sports
   {
     id: "sports",
     name: "Sports",
@@ -776,6 +784,8 @@ export const categories: Category[] = [
       },
     ],
   },
+
+  // Tech
   {
     id: "technology",
     name: "Technology",
@@ -905,6 +915,8 @@ export const categories: Category[] = [
       },
     ],
   },
+
+  // Music
   {
     id: "music",
     name: "Music",
@@ -1035,6 +1047,8 @@ export const categories: Category[] = [
     ],
   },
 
+
+  // Jobs
   {
     id: "jobs",
     name: "Jobs",
@@ -1279,31 +1293,34 @@ export const categories: Category[] = [
     ],
   },
 
-  {
-    id: "season",
-    name: "Season",
-    nameMm: "ရာသီ",
-    icon: "🌦️",
-    words: [
-      { en: "Summer", mm: "နွေရာသီ" },
-      { en: "Winter", mm: "ဆောင်းရာသီ" },
-      { en: "Spring", mm: "နွေဦးရာသီ" },
-      { en: "Rainy Season", mm: "မိုးရာသီ" },
-      { en: "Snowfall", mm: "နှင်းကျ" },
-      { en: "Tornado", mm: "လေဆင်နှာမောင်း" },
-      { en: "Tsunami", mm: "ဆူနာမီ" },
-      { en: "Earthquake", mm: "ငလျင်" },
-      { en: "Rainbow", mm: "သက်တံ" },
-      { en: "Thunder", mm: "မိုးကြိုး" },
-      { en: "Heatwave", mm: "အပူလှိုင်း" },
-      { en: "Blizzard", mm: "နှင်းမုန်တိုင်း" },
-      { en: "New Year", mm: "နှစ်သစ်ကူး" },
-      { en: "Thadingyut", mm: "သီတင်းကျွတ်" },
-      { en: "Christmas", mm: "ခရစ္စမတ်" },
-      { en: "Thingyan", mm: "သင်္ကြန်" },
-      { en: "Full Moon Day", mm: "လပြည့်နေ့" },
-    ],
-  },
+  // Season
+  // {
+  //   id: "season",
+  //   name: "Season",
+  //   nameMm: "ရာသီ",
+  //   icon: "🌦️",
+  //   words: [
+  //     { en: "Summer", mm: "နွေရာသီ" },
+  //     { en: "Winter", mm: "ဆောင်းရာသီ" },
+  //     { en: "Spring", mm: "နွေဦးရာသီ" },
+  //     { en: "Rainy Season", mm: "မိုးရာသီ" },
+  //     { en: "Snowfall", mm: "နှင်းကျ" },
+  //     { en: "Tornado", mm: "လေဆင်နှာမောင်း" },
+  //     { en: "Tsunami", mm: "ဆူနာမီ" },
+  //     { en: "Earthquake", mm: "ငလျင်" },
+  //     { en: "Rainbow", mm: "သက်တံ" },
+  //     { en: "Thunder", mm: "မိုးကြိုး" },
+  //     { en: "Heatwave", mm: "အပူလှိုင်း" },
+  //     { en: "Blizzard", mm: "နှင်းမုန်တိုင်း" },
+  //     { en: "New Year", mm: "နှစ်သစ်ကူး" },
+  //     { en: "Thadingyut", mm: "သီတင်းကျွတ်" },
+  //     { en: "Christmas", mm: "ခရစ္စမတ်" },
+  //     { en: "Thingyan", mm: "သင်္ကြန်" },
+  //     { en: "Full Moon Day", mm: "လပြည့်နေ့" },
+  //   ],
+  // },
+
+  // Fruits
   {
     id: "fruit",
     name: "Fruit",
