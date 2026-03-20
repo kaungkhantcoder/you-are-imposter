@@ -1256,43 +1256,6 @@ export const categories: Category[] = [
     ],
   },
 
-  // Artist
-  // {
-  //   id: "artist",
-  //   name: "Artist",
-  //   nameMm: "အနုပညာရှင်",
-  //   icon: "🎨",
-  //   words: [
-  //     { en: "Leonardo da Vinci", mm: "လီယိုနာဒို ဒါဗင်ချီ" },
-  //     { en: "Pablo Picasso", mm: "ပါဘလို ပီကာဆို" },
-  //     { en: "Vincent van Gogh", mm: "ဗင်းဆင့် ဗန်ဂို" },
-  //     { en: "Frida Kahlo", mm: "ဖရီဒါ ကာလို" },
-  //     { en: "Michelangelo", mm: "မိုက်ကယ်လ်အန်ဂျလို" },
-  //     { en: "Claude Monet", mm: "ကလော့ မိုနေး" },
-  //     { en: "Salvador Dali", mm: "ဆာလ်ဗေဒေါ ဒါလီ" },
-  //     { en: "Andy Warhol", mm: "အင်ဒီ ဝေါဟော" },
-  //     { en: "Rembrandt", mm: "ရမ်ဘရန့်" },
-  //   ],
-  // },
-
-  // Famous Person
-  {
-    id: "famous",
-    name: "Famous Person",
-    nameMm: "နာမည်ကြီးသူ",
-    icon: "⭐",
-    words: [
-      { en: "Elon Musk", mm: "အီလွန် မတ်စ်" },
-      { en: "Albert Einstein", mm: "အဲလ်ဘတ် အိုင်းစတိုင်း" },
-      { en: "Cristiano Ronaldo", mm: "ခရစ်စတီယာနို ရိုနာလ်ဒို" },
-      { en: "Taylor Swift", mm: "တေလာ ဆွစ်ဖ်" },
-      { en: "Steve Jobs", mm: "စတီးဗ် ဂျော့ဘ်စ်" },
-      { en: "Mark Zuckerberg", mm: "ဇူကာဘတ်" },
-      { en: "Michael Jackson", mm: "မိုက်ကယ် ဂျက်ဆင်" },
-      { en: "Lionel Messi", mm: "လိုင်ယနယ် မက်ဆီ" },
-    ],
-  },
-
   // Season
   // {
   //   id: "season",
@@ -1526,5 +1489,69 @@ export const categories: Category[] = [
         ],
       },
     ],
+  },
+
+  {
+  id: "country",
+  name: "Country",
+  nameMm: "နိုင်ငံ",
+  icon: "🌍",
+  words: [
+    {
+      en: "Myanmar",
+      mm: "မြန်မာ",
+      hints: [
+        { en: "Pagoda", mm: "စေတီ" },
+        { en: "Yangon", mm: "ရန်ကုန်" },
+        { en: "Rice", mm: "ဆန်" },
+        { en: "Asia", mm: "အာရှ" },
+        { en: "Irrawaddy", mm: "ဧရာဝတီ" }
+      ]
+    },
+    {
+      en: "Japan",
+      mm: "ဂျပန်",
+      hints: [
+        { en: "Sushi", mm: "ဆူရှီ" },
+        { en: "Tokyo", mm: "တိုကျို" },
+        { en: "Samurai", mm: "စမူရိုင်း" },
+        { en: "Technology", mm: "နည်းပညာ" },
+        { en: "Mount Fuji", mm: "ဖူဂျိတောင်" }
+      ]
+    },
+    {
+      en: "France",
+      mm: "ပြင်သစ်",
+      hints: [
+        { en: "Blue", mm: "အပြာ" },
+        { en: "Eiffel Tower", mm: "အီဖယ်တာဝါ" },
+        { en: "Wine", mm: "စပျစ်ရည်" },
+        { en: "Fashion", mm: "ဖက်ရှင်" },
+        { en: "Croissant", mm: "ခရိုဆန်" }
+      ]
+    },
+    {
+      en: "India",
+      mm: "အိန္ဒိယ",
+      hints: [
+        { en: "Taj Mahal", mm: "တာ့ခ်မဟယ်" },
+        { en: "Bollywood", mm: "ဘောလီဝုဒ်" },
+        { en: "Spices", mm: "အရသာပေါင်းများစွာ" },
+        { en: "Yoga", mm: "ယိုးဂ" },
+        { en: "Ganges", mm: "ဂင်္ဂါ" }
+      ]
+    },
+    {
+      en: "Brazil",
+      mm: "ဘရာဇီး",
+      hints: [
+        { en: "Amazon", mm: "အမေဇွန်" },
+        { en: "Football", mm: "ဘောလုံး" },
+        { en: "Rio Carnival", mm: "ရီယိုပွဲတော်" },
+        { en: "Rainforest", mm: "သစ်တော" },
+        { en: "Coffee", mm: "ကော်ဖီ" }
+      ]
+    }
+  ]
   },
 ];
