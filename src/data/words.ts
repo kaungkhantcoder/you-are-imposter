@@ -1257,31 +1257,31 @@ export const categories: Category[] = [
   },
 
   // Season
-  // {
-  //   id: "season",
-  //   name: "Season",
-  //   nameMm: "ရာသီ",
-  //   icon: "🌦️",
-  //   words: [
-  //     { en: "Summer", mm: "နွေရာသီ" },
-  //     { en: "Winter", mm: "ဆောင်းရာသီ" },
-  //     { en: "Spring", mm: "နွေဦးရာသီ" },
-  //     { en: "Rainy Season", mm: "မိုးရာသီ" },
-  //     { en: "Snowfall", mm: "နှင်းကျ" },
-  //     { en: "Tornado", mm: "လေဆင်နှာမောင်း" },
-  //     { en: "Tsunami", mm: "ဆူနာမီ" },
-  //     { en: "Earthquake", mm: "ငလျင်" },
-  //     { en: "Rainbow", mm: "သက်တံ" },
-  //     { en: "Thunder", mm: "မိုးကြိုး" },
-  //     { en: "Heatwave", mm: "အပူလှိုင်း" },
-  //     { en: "Blizzard", mm: "နှင်းမုန်တိုင်း" },
-  //     { en: "New Year", mm: "နှစ်သစ်ကူး" },
-  //     { en: "Thadingyut", mm: "သီတင်းကျွတ်" },
-  //     { en: "Christmas", mm: "ခရစ္စမတ်" },
-  //     { en: "Thingyan", mm: "သင်္ကြန်" },
-  //     { en: "Full Moon Day", mm: "လပြည့်နေ့" },
-  //   ],
-  // },
+  {
+    id: "season",
+    name: "Season",
+    nameMm: "ရာသီ",
+    icon: "🌦️",
+    words: [
+      { en: "Summer", mm: "နွေရာသီ" },
+      { en: "Winter", mm: "ဆောင်းရာသီ" },
+      { en: "Spring", mm: "နွေဦးရာသီ" },
+      { en: "Rainy Season", mm: "မိုးရာသီ" },
+      { en: "Snowfall", mm: "နှင်းကျ" },
+      { en: "Tornado", mm: "လေဆင်နှာမောင်း" },
+      { en: "Tsunami", mm: "ဆူနာမီ" },
+      { en: "Earthquake", mm: "ငလျင်" },
+      { en: "Rainbow", mm: "သက်တံ" },
+      { en: "Thunder", mm: "မိုးကြိုး" },
+      { en: "Heatwave", mm: "အပူလှိုင်း" },
+      { en: "Blizzard", mm: "နှင်းမုန်တိုင်း" },
+      { en: "New Year", mm: "နှစ်သစ်ကူး" },
+      { en: "Thadingyut", mm: "သီတင်းကျွတ်" },
+      { en: "Christmas", mm: "ခရစ္စမတ်" },
+      { en: "Thingyan", mm: "သင်္ကြန်" },
+      { en: "Full Moon Day", mm: "လပြည့်နေ့" },
+    ],
+  },
 
   // Fruits
   {
@@ -1491,67 +1491,67 @@ export const categories: Category[] = [
     ],
   },
 
-  // {
-  // id: "country",
-  // name: "Country",
-  // nameMm: "နိုင်ငံ",
-  // icon: "🌍",
-  // words: [
-  //   {
-  //     en: "Myanmar",
-  //     mm: "မြန်မာ",
-  //     hints: [
-  //       { en: "Pagoda", mm: "စေတီ" },
-  //       { en: "Yangon", mm: "ရန်ကုန်" },
-  //       { en: "Rice", mm: "ဆန်" },
-  //       { en: "Asia", mm: "အာရှ" },
-  //       { en: "Irrawaddy", mm: "ဧရာဝတီ" }
-  //     ]
-  //   },
-  //   {
-  //     en: "Japan",
-  //     mm: "ဂျပန်",
-  //     hints: [
-  //       { en: "Sushi", mm: "ဆူရှီ" },
-  //       { en: "Tokyo", mm: "တိုကျို" },
-  //       { en: "Samurai", mm: "စမူရိုင်း" },
-  //       { en: "Technology", mm: "နည်းပညာ" },
-  //       { en: "Mount Fuji", mm: "ဖူဂျိတောင်" }
-  //     ]
-  //   },
-  //   {
-  //     en: "France",
-  //     mm: "ပြင်သစ်",
-  //     hints: [
-  //       { en: "Blue", mm: "အပြာ" },
-  //       { en: "Eiffel Tower", mm: "အီဖယ်တာဝါ" },
-  //       { en: "Wine", mm: "စပျစ်ရည်" },
-  //       { en: "Fashion", mm: "ဖက်ရှင်" },
-  //       { en: "Croissant", mm: "ခရိုဆန်" }
-  //     ]
-  //   },
-  //   {
-  //     en: "India",
-  //     mm: "အိန္ဒိယ",
-  //     hints: [
-  //       { en: "Taj Mahal", mm: "တာ့ခ်မဟယ်" },
-  //       { en: "Bollywood", mm: "ဘောလီဝုဒ်" },
-  //       { en: "Spices", mm: "အရသာပေါင်းများစွာ" },
-  //       { en: "Yoga", mm: "ယိုးဂ" },
-  //       { en: "Ganges", mm: "ဂင်္ဂါ" }
-  //     ]
-  //   },
-  //   {
-  //     en: "Brazil",
-  //     mm: "ဘရာဇီး",
-  //     hints: [
-  //       { en: "Amazon", mm: "အမေဇွန်" },
-  //       { en: "Football", mm: "ဘောလုံး" },
-  //       { en: "Rio Carnival", mm: "ရီယိုပွဲတော်" },
-  //       { en: "Rainforest", mm: "သစ်တော" },
-  //       { en: "Coffee", mm: "ကော်ဖီ" }
-  //     ]
-  //   }
-  // ]
-  // },
+  {
+  id: "country",
+  name: "Country",
+  nameMm: "နိုင်ငံ",
+  icon: "🌍",
+  words: [
+    {
+      en: "Myanmar",
+      mm: "မြန်မာ",
+      hints: [
+        { en: "Pagoda", mm: "စေတီ" },
+        { en: "Yangon", mm: "ရန်ကုန်" },
+        { en: "Rice", mm: "ဆန်" },
+        { en: "Asia", mm: "အာရှ" },
+        { en: "Irrawaddy", mm: "ဧရာဝတီ" }
+      ]
+    },
+    {
+      en: "Japan",
+      mm: "ဂျပန်",
+      hints: [
+        { en: "Sushi", mm: "ဆူရှီ" },
+        { en: "Tokyo", mm: "တိုကျို" },
+        { en: "Samurai", mm: "စမူရိုင်း" },
+        { en: "Technology", mm: "နည်းပညာ" },
+        { en: "Mount Fuji", mm: "ဖူဂျိတောင်" }
+      ]
+    },
+    {
+      en: "France",
+      mm: "ပြင်သစ်",
+      hints: [
+        { en: "Blue", mm: "အပြာ" },
+        { en: "Eiffel Tower", mm: "အီဖယ်တာဝါ" },
+        { en: "Wine", mm: "စပျစ်ရည်" },
+        { en: "Fashion", mm: "ဖက်ရှင်" },
+        { en: "Croissant", mm: "ခရိုဆန်" }
+      ]
+    },
+    {
+      en: "India",
+      mm: "အိန္ဒိယ",
+      hints: [
+        { en: "Taj Mahal", mm: "တာ့ခ်မဟယ်" },
+        { en: "Bollywood", mm: "ဘောလီဝုဒ်" },
+        { en: "Spices", mm: "အရသာပေါင်းများစွာ" },
+        { en: "Yoga", mm: "ယိုးဂ" },
+        { en: "Ganges", mm: "ဂင်္ဂါ" }
+      ]
+    },
+    {
+      en: "Brazil",
+      mm: "ဘရာဇီး",
+      hints: [
+        { en: "Amazon", mm: "အမေဇွန်" },
+        { en: "Football", mm: "ဘောလုံး" },
+        { en: "Rio Carnival", mm: "ရီယိုပွဲတော်" },
+        { en: "Rainforest", mm: "သစ်တော" },
+        { en: "Coffee", mm: "ကော်ဖီ" }
+      ]
+    }
+  ]
+  },
 ];
