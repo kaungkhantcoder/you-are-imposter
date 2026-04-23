@@ -19,6 +19,16 @@ export interface GameSession {
   votes: Record<number, number>; // voterId -> votedPlayerId
 }
 
+export interface SecretRoundParticipant {
+  id: string;
+  name: string;
+}
+
+export interface SecretRoundAssignment extends SecretRoundParticipant {
+  isImposter: boolean;
+  hasViewed: boolean;
+}
+
 function generateSessionId(): string {
   return Math.random().toString(36).substring(2, 8).toUpperCase();
 }
@@ -100,37 +110,70 @@ function createHintGenerator(word: WordPair) {
   };
 }
 
+function createRoundDetails(selectedCategoryIds: string[]) {
+  const selectedCats = categories.filter((c) => selectedCategoryIds.includes(c.id));
+  const allWords = selectedCats.flatMap((c) => c.words);
+  const word = allWords[Math.floor(Math.random() * allWords.length)];
+  const hintGenerator = createHintGenerator(word);
+  const hint = hintGenerator();
+
+  return {
+    word,
+    imposterHint: hint.en,
+    imposterHintMm: hint.mm,
+  };
+}
+
+export function createSecretRound(
+  participants: SecretRoundParticipant[],
+  imposterCount: number,
+  selectedCategoryIds: string[]
+) {
+  const { word, imposterHint, imposterHintMm } = createRoundDetails(selectedCategoryIds);
+
+  const imposterIndices = new Set<number>();
+  while (imposterIndices.size < imposterCount) {
+    imposterIndices.add(Math.floor(Math.random() * participants.length));
+  }
+
+  const players: SecretRoundAssignment[] = participants.map((participant, index) => ({
+    ...participant,
+    isImposter: imposterIndices.has(index),
+    hasViewed: false,
+  }));
+
+  return {
+    players: shuffleArray(players),
+    word,
+    imposterHint,
+    imposterHintMm,
+  };
+}
+
 export function createGameSession(
   playerNames: string[],
   imposterCount: number,
   selectedCategoryIds: string[]
 ): GameSession {
-  const selectedCats = categories.filter((c) => selectedCategoryIds.includes(c.id));
-  const allWords = selectedCats.flatMap((c) => c.words);
-  const word = allWords[Math.floor(Math.random() * allWords.length)];
+  const round = createSecretRound(
+    playerNames.map((name, index) => ({ id: String(index), name })),
+    imposterCount,
+    selectedCategoryIds
+  );
 
-  // Create a hint generator for this word
-  const hintGenerator = createHintGenerator(word);
-  const hint = hintGenerator();
-
-  const imposterIndices = new Set<number>();
-  while (imposterIndices.size < imposterCount) {
-    imposterIndices.add(Math.floor(Math.random() * playerNames.length));
-  }
-
-  const players: Player[] = playerNames.map((name, i) => ({
-    id: i,
-    name,
-    isImposter: imposterIndices.has(i),
-    hasViewed: false,
+  const players: Player[] = round.players.map((player) => ({
+    id: Number(player.id),
+    name: player.name,
+    isImposter: player.isImposter,
+    hasViewed: player.hasViewed,
   }));
 
   return {
     sessionId: generateSessionId(),
-    players: shuffleArray(players),
-    word,
-    imposterHint: hint.en,
-    imposterHintMm: hint.mm,
+    players,
+    word: round.word,
+    imposterHint: round.imposterHint,
+    imposterHintMm: round.imposterHintMm,
     currentPlayerIndex: 0,
     phase: "viewing",
     selectedCategories: selectedCategoryIds,
